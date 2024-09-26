@@ -2,9 +2,12 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>
-        <p>dasdasd</p>
-    </div>
+    <nav className='header'>
+      <img src="/img/farmarcia.PNG.png" id='logo-nav' />
+      <button>Sobre nós</button>
+      <button>Ofertas</button>
+      <button>Cadastro / Login</button>
+    </nav>
   )
 }
 
