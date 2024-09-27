@@ -4,7 +4,7 @@ function Header() {
   return (
     <nav className='header'>
       <img src="/img/farmarcia.PNG.png" id='logo-nav' />
-      <button>Sobre nós</button>
+      <button id='sobre-nos'>Sobre nós</button>
       <button>Ofertas</button>
       <button>Cadastro / Login</button>
     </nav>
