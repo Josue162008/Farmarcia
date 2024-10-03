@@ -13,7 +13,6 @@ body{
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  
 }
 
 body::-webkit-scrollbar{
@@ -84,6 +83,9 @@ body::-webkit-scrollbar-thumb{
   color: var(--cor-2);
 }
 #banner{
+  background: url(/public/img/promocao.gif);
+  background-repeat: no-repeat;
+  width: 1900px;
   box-shadow: 0px 0px 10px var(--cor-2);
   margin-left: 4px;
 }
@@ -91,7 +93,6 @@ body::-webkit-scrollbar-thumb{
   transition: 0.2s;
   box-shadow: 0px 0px 10px var(--cor-6);
 }
-
 .produtos{
   background-color: white;
   margin-right: 4%;
@@ -101,7 +102,6 @@ body::-webkit-scrollbar-thumb{
   padding-right: 4%;
   box-shadow: 0px 0px 10px var(--cor-2);
   text-shadow: 0px 0px 10px var(--cor-3);
-  cursor: pointer;
 }
 
 .produtos:hover{
@@ -117,6 +117,7 @@ body::-webkit-scrollbar-thumb{
   width: 100%;
   gap: 70px;
   padding-left: 0%;
+  justify-content: 10px;
 }
 
 .produtos div{
@@ -124,56 +125,43 @@ body::-webkit-scrollbar-thumb{
   flex-direction: row;
   gap: 20px;
 }
+.produto-imagem {
+  display: flex;
+  justify-content: center;
+}
 
 @media (max-width: 768px) {
-  .header{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header button{
-    font-size: 25px;
-    margin-left: 0;
-    margin-bottom: 15px;
-  }
-
-  #logo-nav{
-    height: 150px;
-  }
-
-  .produtos{
-    margin-right: 0;
-    margin-bottom: 20px;
-    padding: 30px;
-  }
-
-  .vendas{
-    flex-direction: column;
-    align-items: center;
+  .produtos {
+    width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 480px) {
-  .header button{
-    font-size: 18px;
-    margin-left: 0;
-    margin-bottom: 10px;
-    padding: 10px;
+  .produtos {
+    width: 100%;
+    margin: 10px 0;
   }
 
-  #logo-nav{
-    height: 100px;
+  .produtos h1 {
+    font-size: 1em;
   }
 
-  .produtos{
-    margin-right: 0;
-    margin-bottom: 10px;
-    padding: 20px;
-    font-size: 14px;
+  .produtos h2 {
+    font-size: 1.2em;
   }
 
-  .vendas{
+  .produtos h3 {
+    font-size: 0.9em;
+  }
+  #banner{
+    margin: 0;
+    width: auto;
+    background: url(/public/img/promocao-1.gif);
+  }
+  .header{
     flex-direction: column;
-    align-items: center;
+    gap: 30px;
+    width: auto;
   }
 }
+
